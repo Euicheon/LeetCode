@@ -1,4 +1,4 @@
-from collections import Counter
+# from collections import Counter
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -8,11 +8,13 @@ class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
         nums = []
         curr = head
+        len_h = 1
         while curr.next != None:
-            nums.append(curr.val)
+            len_h = len_h + 1
+            # nums.append(curr.val)
             curr = curr.next
-        nums.append(curr.val)
-        flag = len(nums)//2
+        # nums.append(curr.val)
+        flag = len_h//2
         curr = head
         # nums_dict = Counter(nums[:len(nums)//2+1])
         # flag_cnt = nums_dict[flag]
