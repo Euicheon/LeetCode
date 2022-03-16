@@ -8,6 +8,6 @@ class Solution:
             if c == ")":
                 temp -= 1
             ans = max(temp,ans)
-        print(ans)
+        # print(ans)
         return ans
     
