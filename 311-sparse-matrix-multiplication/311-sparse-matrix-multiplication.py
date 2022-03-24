@@ -9,6 +9,7 @@ class Solution:
         for i in range(m):
             for l in range(n):
                 for j in range(k):
-                    ans[i][l] += mat1[i][j]*mat2[j][l]
+                    if not (mat1[i][j] == 0 or mat2[j][l] == 0):
+                        ans[i][l] += mat1[i][j]*mat2[j][l]
         
         return ans
